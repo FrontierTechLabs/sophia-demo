@@ -3,10 +3,10 @@ from typing import Optional
 from pathlib import Path
 from fastapi import FastAPI, Request, Response, UploadFile, File, Form, HTTPException
 from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
-from sophia.engine import forensic_scan_text
-from sophia.extract import extract_pdf_text
-from sophia.legal import LEGAL_REFERENCES
-from sophia.brand import logo_svg, page_shell, BASE_CSS
+from .sophia.engine import forensic_scan_text
+from .sophia.extract import extract_pdf_text
+from .sophia.legal import LEGAL_REFERENCES
+from .sophia.brand import logo_svg, page_shell, BASE_CSS
 
 logging.basicConfig(level=logging.INFO, format="%(message)s", stream=sys.stderr)
 log = logging.getLogger("sophia")
