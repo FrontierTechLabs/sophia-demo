@@ -307,4 +307,3 @@ async def health():
     return {"status":"ok","engine":"sophia-forensic-v4"}
 
 # ── Vercel entrypoint ──
-handler = app
