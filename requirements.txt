@@ -1,0 +1,4 @@
+fastapi
+python-multipart
+pdfplumber
+PyPDF2
